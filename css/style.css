@@ -1,0 +1,111 @@
+body{
+	background-color: pink;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 960px;
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*position: relative;*/
+}
+
+#page1,#page2,#page3,#page4,.banner,.content{
+	margin: 0 auto;
+	width: 960px;
+	text-align: center;
+}
+
+#page3,.footer,.banner,.content{
+	width: 100%;
+	background-color: green;
+	/*position: relative;*/
+}
+
+.content{
+	background-color: #fff;
+}
+
+#page2,#page3,#page4,.content{
+	background-image: url("../images/arrow.png");
+	background-repeat: no-repeat;
+	background-position:50% 30px;
+	background-size: 38px 48px;
+}
+
+#page3-desc{
+	height: 300px;
+	background-image: url("../images/picture2.png");
+	background-repeat: no-repeat;
+	background-position:20% 0;
+}
+
+#page3-desc-1,#page3-desc-2,#page3-desc-3{
+	height: 65px;
+	text-align: left;
+	background-image: url("../images/aperture1.png");
+	background-repeat: no-repeat;
+	background-position:0 0;
+	margin-left: 50%;
+}
+#page3-desc-1>p,#page3-desc-2>p,#page3-desc-3>p{
+	margin-left: 80px;
+}
+
+#page4-desc{
+	height: 380px;
+	background-image: url("../images/picture1.png");
+	background-repeat: no-repeat;
+	background-position:100% 0;
+}
+
+#page4-desc>ul{
+	text-align: left;
+}
+
+.footer{
+	margin-bottom: -10px;
+}
+.footer-content{
+	margin:0 100px;
+}
+
+.banner{
+	background: transparent url("../images/banner1.png") no-repeat scroll center center / cover;
+	min-height: 499px;
+	min-width: 960px;
+	/*防止背景图片自适应后与上面的文字出现浮动跑偏*/
+	text-align: left;
+}
+.banner img{
+	margin-top: 150px;
+}
+
+#content-desc{
+	position: relative;
+	width: 960px;
+	height: 300px;
+}
+
+#content-desc-1,#content-desc-2,#content-desc-3{
+	width: 300px;
+	top: 0;
+	position: absolute;
+}
+
+#content-desc-1{
+	background: transparent url("../images/red circle.png") no-repeat scroll center center;
+	min-height: 218px;
+}
+
+#content-desc-2{
+	background: transparent url("../images/blue circle.png") no-repeat scroll center center;
+	min-height: 218px;
+	left: 330px;
+}
+#content-desc-3{
+	background: transparent url("../images/green circle.png") no-repeat scroll center center;
+	min-height: 218px;
+	left: 660px;
+}
