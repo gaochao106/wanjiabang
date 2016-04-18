@@ -1,5 +1,5 @@
 body{
-	background-color: pink;
+	background-color: #ff5c7a;
 	margin: 0;
 	padding: 0;
 }
@@ -19,7 +19,7 @@ body{
 
 #page3,.footer,.banner,.content{
 	width: 100%;
-	background-color: green;
+	background-color: #fd8198;
 	/*position: relative;*/
 }
 
@@ -30,8 +30,17 @@ body{
 #page2,#page3,#page4,.content{
 	background-image: url("../images/arrow.png");
 	background-repeat: no-repeat;
-	background-position:50% 30px;
+	background-position:50% 64px;
 	background-size: 38px 48px;
+}
+
+.content{
+	background-image: url("../images/arrow1.png");
+	background-position: 50% 17px;
+}
+
+#page3,#page4{
+	background-position: 50% 32px;
 }
 
 #page3-desc{
@@ -47,7 +56,8 @@ body{
 	background-image: url("../images/aperture1.png");
 	background-repeat: no-repeat;
 	background-position:0 0;
-	margin-left: 50%;
+	margin-left: 53%;
+	/*margin-top: 20px;*/
 }
 #page3-desc-1>p,#page3-desc-2>p,#page3-desc-3>p{
 	margin-left: 80px;
@@ -58,17 +68,25 @@ body{
 	background-image: url("../images/picture1.png");
 	background-repeat: no-repeat;
 	background-position:100% 0;
+	margin-top: 30px;
+	margin-bottom: 77px;
 }
 
 #page4-desc>ul{
 	text-align: left;
 }
 
+#page4-desc>ul>li{
+	margin-top: 30px;
+	line-height: 2;
+	color: #ffded4;
+}
+
 .footer{
 	margin-bottom: -10px;
-}
-.footer-content{
-	margin:0 100px;
+	color: #ffffff;
+	line-height: 2;
+	padding-bottom: 57px;
 }
 
 .banner{
@@ -85,27 +103,149 @@ body{
 #content-desc{
 	position: relative;
 	width: 960px;
-	height: 300px;
+	/*height: 300px;*/
+	min-height: 218px;
+	margin-top: 96px;
+	margin-bottom: 171px;
+}
+
+#content-desc p{
+	text-align: left;
+	margin-left: 80px;
+	line-height: 2;
+	width: 150px;
 }
 
 #content-desc-1,#content-desc-2,#content-desc-3{
 	width: 300px;
 	top: 0;
 	position: absolute;
+	font-size: 14px;
+	color: #ffffff;
 }
 
 #content-desc-1{
 	background: transparent url("../images/red circle.png") no-repeat scroll center center;
 	min-height: 218px;
+	left: 0px;
+}
+
+#content-desc-1 > h3,#content-desc-2 > h3,#content-desc-3 > h3{
+	margin-top: -42px;
+	margin-bottom: 60px;
+	color: #ff5b7c;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#content-desc-2 > h3{
+	color: #729fc9;
+}
+
+#content-desc-3 > h3{
+	color: #78a031;
 }
 
 #content-desc-2{
 	background: transparent url("../images/blue circle.png") no-repeat scroll center center;
 	min-height: 218px;
-	left: 330px;
+	left: 320px;
 }
 #content-desc-3{
 	background: transparent url("../images/green circle.png") no-repeat scroll center center;
 	min-height: 218px;
-	left: 660px;
+	left: 620px;
 }
+#content-desc-3 p{
+	line-height: 1.5;
+}
+
+
+
+/*导航栏*/
+nav{
+	height: 77px;
+	margin-top: 18px;
+}
+
+.navbar{
+	border-radius: 0;
+	margin-bottom: 0px;
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	padding: 28px 24px;
+	font-size: 20px;
+	color: #ff5c7a;
+}
+
+.navbar-inverse{
+	background-color: #FFF;
+	border: none;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	background: transparent url("../images/selected.png") no-repeat scroll center center / contain;
+	min-height: 77px;
+	color: #c0d640;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover{
+	background: transparent url("../images/selected.png") no-repeat scroll center center / contain;
+	min-height: 77px;
+	color: #c0d640;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+	padding: 0;
+	margin-top: -18px;
+	margin-left: 100px;
+}
+
+.collapse{
+	/*margin-right: 20px;*/
+}
+
+.news-content{
+	margin-top: 50px;
+	border-left: solid 1px #fd8198;
+	text-align: left;
+	line-height: 2;
+	padding:15px;
+	padding-left: 35px;
+	letter-spacing: 2px;
+	color: #515151;
+}
+.news-content>p{
+	font-size: 14px;
+}
+.news-content>h3{
+	color: #ff708b;
+	font-size: 18px;
+	margin-left: -48px;
+	margin-top: -30px;
+}
+.news-content>h4{
+	color: #ff708b;
+	font-size:16px;
+	margin-top: 28px;
+	margin-bottom: 28px;
+}
+
+.customer-content1{
+	margin: 25px auto;
+	background: #585858 url("../images/customer1.png") no-repeat scroll center center /cover;
+	min-height: 462px;
+}
+.customer-content2{
+	padding: 15px;
+	margin: 25px auto;
+	margin-bottom: 129px;
+	background: #585858 url("../images/customer2.png") no-repeat scroll center center /cover;
+	min-height: 572px;
+}
+
+
+
